@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document
+        <link rel="stylesheet" href="internship_survey_form2.css">
+    </title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center"><strong><u>Internship Survey Form</h1> </strong></u>
+          <p id="description" class="description text-center">
+            Thank you for giving us your precious time so that we can improve our platform.
+          </p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Your Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email address</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >Your Age<span class="clue">(optional)</span></label
+            >
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="18"
+              max="80"
+              class="form-control"
+              placeholder="Age"
+            />
+          </div>
+          <div class="form-group">
+            <p>Which role suits you the best?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Select your current title</option>
+              <option value="student">A student</option>
+              <option value="job">Full Time Job</option>
+              <option value="job">Internship</option>
+              <option value="learner">Part Timer</option>
+              <option value="preferNo">Prefer not to say</option>
+              <option value="other">Other job</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>Would you like to recommend any internship opportunity to your friend?</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="definitely"
+                type="radio"
+                class="input-radio"
+                checked
+              />Definitely</label
+            >
+            <label>
+              <input
+                name="user-recommend"
+                value="maybe"
+                type="radio"
+                class="input-radio"
+              />Maybe</label
+            >
+      
+            <label
+              ><input
+                name="user-recommend"
+                value="not-sure"
+                type="radio"
+                class="input-radio"
+              />No</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>
+              What is your favorite feature of our internship programs?
+            </p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+              <option disabled selected value>Select your desired option</option>
+              <option value="challenges">Mentorship</option>
+              <option value="projects">Job experience</option>
+              <option value="community">oportunity</option>
+              <option value="openSource">Professional Network</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>
+              What would you like to improve in our internship program?
+              <span class="clue">(Select all that need changes)</span>
+            </p>
+      
+            <label
+              ><input
+                name="prefer"
+                value=" regular check-ins."
+                type="checkbox"
+                class="input-checkbox"
+              /> regular check-ins.</label
+            >
+            <label>
+              <input
+                name="prefer"
+                value="flexible work options"
+                type="checkbox"
+                class="input-checkbox"
+              />flexible work options</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="Conduct exit interviews"
+                type="checkbox"
+                class="input-checkbox"
+              />Conduct exit interviews</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="challenges"
+                type="checkbox"
+                class="input-checkbox"
+              />Challenges</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="work-culture"
+                type="checkbox"
+                class="input-checkbox"
+              />Work Culture</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="help-rooms"
+                type="checkbox"
+                class="input-checkbox"
+              />help rooms</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="not-many-internship"
+                type="checkbox"
+                class="input-checkbox"
+              />not many internship</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="meetups"
+                type="checkbox"
+                class="input-checkbox"
+              />Meetups</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>Any suggestions for us?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="You can enter your comment here..."
+            ></textarea>
+          </div>
+      
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+      
+</body>
+</html>
